@@ -1,0 +1,1 @@
+$(".dropdown-btn").click(function(e){e.preventDefault();var i=$(this).next();i.is(":hidden")?($(".dropdown-btn").removeClass("active"),$(".mobile-panel__content").hide(),$(this).addClass("active"),i.slideDown(250)):($(this).removeClass("active"),i.slideUp(250))}),$(".main-slider .bxslider").bxSlider({mode:"fade",captions:!0});

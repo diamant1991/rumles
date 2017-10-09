@@ -1,0 +1,147 @@
+@media(max-width: 1199px){
+	.sidebar,
+	.logo{
+		width: 250px;
+	}
+	.right-block{
+		width: calc(100% - 300px);
+	}
+	.header-wrapp{
+		padding-left: 275px;
+	}
+	.nav__menu{
+		padding-left: 275px;
+	}
+	.search{
+		width: 212px;
+	}
+	.product{
+		margin-bottom: 0;
+	}
+	.product__item{
+		margin-bottom: 30px;
+	}
+	.item-header__name{
+		font-size: 14px;
+	}
+	.item-header{
+		padding: 20px;
+	}
+}
+@media(min-width: 992px){
+	.visible-sm{
+		display: none !important;
+	}
+}
+@media(max-width: 991px){
+	.hidden-sm{
+		display: none;
+	}
+	.right-block{
+		width: 100%;
+	}
+	.content{
+		padding: 40px 0;
+	}
+	.search{
+		width: auto;
+		max-width: 500px;
+		margin: 15px auto;
+	}
+	.telephone{
+		padding: 15px 0;
+		text-align: center;
+	}
+	.cart-count{
+		right: -15px;
+    top: -10px;
+	}
+	.block-sm{
+		display: block;
+
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+			height: auto;
+		}
+	}
+	.info{
+		float: right;
+	}
+}
+@media(max-width: 767px){
+	.hidden-xs{
+		display: none;
+	}
+	.product__item_pad{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.footer__item{
+		width: 50%;
+		margin-bottom: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.item-header__name{
+		margin-bottom: 10px;
+	}
+	.item-header{
+		min-height: 80px;
+
+		.pull-left,
+		.pull-right{
+			width: 100%;
+		}
+	}
+	.footer-icon:before{
+		content: none;
+	}
+	.product__title{
+		font-size: 14px;
+	}
+	.text-block{
+		padding-top: 20px;
+	}
+}
+@media(max-width: 480px){
+	.col-12{
+		width: 100%;
+	}
+	.item-header{
+		min-height: 100px;
+	}
+	.footer__adress + div{
+		margin-top: 10px;
+	}
+	.footer__title{
+		margin-bottom: 10px;
+	}
+	.footer__item{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer-top{
+		padding-top: 20px;
+		padding-bottom: 25px;
+	}
+	.footer-bottom__item{
+		width: 100%;
+		text-align: center;
+		opacity: 1;
+
+		+ div{
+			margin-top: 15px;
+		}
+	}
+	.logo{
+		width: 170px;
+	}
+	.header-wrapp{
+		padding-left: 155px;
+	}
+}
