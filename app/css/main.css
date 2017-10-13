@@ -1107,13 +1107,17 @@ p {
     background: #ffe248;
     color: #000;
     border-bottom: 2px solid #ffb123; }
+  .btn-green {
+    background: #54c451;
+    border-bottom: 2px solid #4c9d2f;
+    color: #000; }
   .btn-full {
     width: 100%;
     display: block;
     border-bottom-width: 3px;
-    padding-top: 13px;
+    padding-top: 14px;
     text-align: center;
-    padding-bottom: 11px;
+    padding-bottom: 12px;
     font-size: 8px; }
   .btn-middle {
     font-size: 11px;
@@ -1319,6 +1323,9 @@ p {
     .product_large .col-lg-3 {
       padding-left: 12px;
       padding-right: 12px; }
+  .product_card .row {
+    margin-left: -15px;
+    margin-right: -15px; }
   .product__date {
     position: absolute;
     z-index: 2;
@@ -1414,12 +1421,16 @@ p {
   font-family: Verdana, sans-serif;
   font-weight: bold;
   font-size: 14px; }
+  .price-today_large {
+    font-size: 25px; }
 
 .price-prev {
   font-size: 8.5px;
   font-family: Verdana, sans-serif;
   color: #cccccc;
   text-decoration: line-through; }
+  .price-prev_large {
+    font-size: 20px; }
 
 .yellow-link {
   font-size: 7px;
@@ -1613,6 +1624,8 @@ img {
   font-weight: bold;
   font-size: 9px;
   cursor: pointer; }
+  .count-btn_card {
+    font-size: 12px; }
 
 .count-input {
   display: inline-block;
@@ -1625,6 +1638,9 @@ img {
   font-family: Verdana, sans-serif;
   font-weight: bold;
   font-size: 8px; }
+  .count-input_card {
+    width: 35px;
+    height: 30px; }
 
 .count-title {
   font-family: Verdana, sans-serif;
@@ -1632,31 +1648,101 @@ img {
   color: #ccc;
   margin-bottom: 5px;
   text-align: center; }
+  .count-title_card {
+    margin-bottom: 0;
+    font-size: 11px;
+    margin-right: 10px; }
 
-.card__img {
-  text-align: center;
-  margin-bottom: 45px; }
-
-.card__table table {
-  width: 100%;
-  font-family: Verdana, sans-serif;
-  font-size: 10px;
-  color: #333; }
-
-.card__table thead td {
-  padding: 10px 20px;
-  font-weight: bold;
-  background: #f2f2f2;
-  text-transform: uppercase; }
-
-.card__table tbody td {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 10px 20px; }
-  .card__table tbody td:first-child {
-    color: #b9b9b9; }
-  .card__table tbody td:last-child {
+.card {
+  font-family: Verdana, sans-serif; }
+  .card__title {
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
     font-weight: bold;
-    text-align: right; }
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .card__result {
+    height: 215px; }
+    .card__result .price-today {
+      margin-bottom: 25px;
+      margin-top: 0; }
+    .card__result__left {
+      font-weight: bold;
+      margin-right: 30px;
+      font-size: 48px;
+      margin-bottom: 35px; }
+    .card__result__right {
+      text-align: right; }
+  .card__btn {
+    margin-bottom: 30px; }
+  .card__img {
+    text-align: center;
+    margin-bottom: 45px; }
+  .card__info {
+    font-size: 11px;
+    margin-bottom: 25px; }
+    .card__info__item {
+      padding-bottom: 2px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ffe248; }
+  .card__table table {
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    color: #333; }
+  .card__table thead td {
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #f2f2f2;
+    text-transform: uppercase; }
+  .card__table tbody td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 20px; }
+    .card__table tbody td:first-child {
+      color: #b9b9b9; }
+    .card__table tbody td:last-child {
+      font-weight: bold;
+      text-align: right; }
+  .card__prices {
+    font-size: 12px; }
+    .card__prices b {
+      font-size: 16px;
+      font-weight: bold; }
+    .card__prices__item {
+      margin-bottom: 20px; }
+  .card__count {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .card__calc {
+    padding: 30px;
+    font-size: 10px;
+    margin-bottom: 25px;
+    background: #f2f2f2; }
+    .card__calc__title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-transform: uppercase; }
+    .card__calc__text {
+      color: #999999;
+      margin-bottom: 10px; }
+    .card__calc__input {
+      width: 145px;
+      border: 1px solid #ffe248;
+      height: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 12px; }
+    .card__calc__info {
+      margin-left: 10px;
+      color: #999999; }
+
+.price-list {
+  margin-bottom: 25px; }
+  .price-list__text {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #242628;
+    margin-left: 10px; }
 
 .zoom-text {
   text-align: center;
@@ -1666,3 +1752,27 @@ img {
   margin-top: 30px; }
   .zoom-text span {
     color: #77bfff; }
+
+.select-value {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 11px; }
+
+.grey-link {
+  font-size: 11px;
+  font-family: Verdana, sans-serif;
+  color: #cccccc;
+  text-decoration: underline; }
+  .grey-link:hover {
+    text-decoration: none; }
+
+.small-header {
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  background: #54c451;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 30px 0; }

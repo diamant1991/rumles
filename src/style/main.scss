@@ -170,13 +170,18 @@ p {
 		color: #000;
 		border-bottom: 2px solid #ffb123;
 	}
+	&-green{
+		background: #54c451;
+		border-bottom: 2px solid #4c9d2f;
+		color: #000;
+	}
 	&-full{
 		width: 100%;
 		display: block;
 		border-bottom-width: 3px;
-		padding-top: 13px;
+		padding-top: 14px;
 		text-align: center;
-		padding-bottom: 11px;
+		padding-bottom: 12px;
 		font-size: 8px;
 	}
 	&-middle{
@@ -424,6 +429,12 @@ p {
 			padding-right: 12px;
 		}
 	}
+	&_card{
+		.row{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
 	&__date{
 		position: absolute;
 		z-index: 2;
@@ -545,12 +556,20 @@ p {
 	font-family: $verdana;
 	font-weight: bold;
 	font-size: 14px;
+
+	&_large{
+		font-size: 25px;
+	}
 }
 .price-prev{
 	font-size: 8.5px;
 	font-family: $verdana;
 	color: #cccccc;
 	text-decoration: line-through;
+
+	&_large{
+		font-size: 20px;
+	}
 }
 .yellow-link{
 	font-size: 7px;
@@ -796,6 +815,10 @@ img{
 	font-weight: bold;
 	font-size: 9px;
 	cursor: pointer;
+
+	&_card{
+		font-size: 12px;
+	}
 }
 .count-input{
 	display: inline-block;
@@ -808,6 +831,11 @@ img{
 	font-family: $verdana;
 	font-weight: bold;
 	font-size: 8px;
+
+	&_card{
+		width: 35px;
+		height: 30px;
+	}
 }
 .count-title{
 	font-family: $verdana;
@@ -815,11 +843,57 @@ img{
 	color: #ccc;
 	margin-bottom: 5px;
 	text-align: center;
+
+	&_card{
+		margin-bottom: 0;
+		font-size: 11px;
+		margin-right: 10px;
+	}
 }
 .card{
+	font-family: $verdana;
+
+	&__title{
+		text-transform: uppercase;
+		font-family: $verdana;
+		font-weight: bold;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	&__result{
+		height: 215px;
+
+		.price-today{
+			margin-bottom: 25px;
+			margin-top: 0;
+		}
+
+		&__left{
+			font-weight: bold;
+			margin-right: 30px;
+			font-size: 48px;
+			margin-bottom: 35px;
+		}
+		&__right{
+			text-align: right;
+		}
+	}
+	&__btn{
+		margin-bottom: 30px;
+	}
 	&__img{
 		text-align: center;
 		margin-bottom: 45px;
+	}
+	&__info{
+		font-size: 11px;
+		margin-bottom: 25px;
+
+		&__item{
+			padding-bottom: 2px;
+			margin-bottom: 15px;
+			border-bottom: 1px solid $yellow;
+		}
 	}
 	&__table{
 		table{
@@ -851,6 +925,59 @@ img{
 			}
 		}
 	}
+	&__prices{
+		font-size: 12px;
+
+		b{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		&__item{
+			margin-bottom: 20px;
+		}
+	}
+	&__count{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	&__calc{
+		padding: 30px;
+		font-size: 10px;
+		margin-bottom: 25px;
+		background: #f2f2f2;
+
+		&__title{
+			font-weight: bold;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+		}
+		&__text{
+			color: #999999;
+			margin-bottom: 10px;
+		}
+		&__input{
+			width: 145px;
+			border: 1px solid $yellow;
+			height: 25px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 12px;
+		}
+		&__info{
+			margin-left: 10px;
+			color: #999999;
+		}
+	}
+}
+.price-list{
+	margin-bottom: 25px;
+
+	&__text{
+		font-size: 12px;
+		text-decoration: underline;
+		color: #242628;
+		margin-left: 10px;
+	}
 }
 .zoom-text{
 	text-align: center;
@@ -862,4 +989,30 @@ img{
 	span{
 		color: #77bfff;
 	}
+}
+.select-value{
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	font-family: $verdana;
+	font-size: 11px;
+}
+.grey-link{
+	font-size: 11px;
+	font-family: $verdana;
+	color: #cccccc;
+	text-decoration: underline;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+.small-header{
+	font-family: $verdana;
+	text-transform: uppercase;
+	background: #54c451;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 10px 20px;
+	margin: 30px 0;
 }

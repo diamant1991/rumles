@@ -40,6 +40,9 @@
 	.right-block{
 		width: 100%;
 	}
+	.card-top__descr{
+		margin-top: 30px;
+	}
 	.content{
 		padding: 40px 0;
 	}
@@ -108,6 +111,9 @@
 @media(max-width: 480px){
 	.col-12{
 		width: 100%;
+	}
+	.card__btn .col-xs-6 + div{
+		margin-top: 15px;
 	}
 	.item-header{
 		min-height: 100px;
