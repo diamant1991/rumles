@@ -1423,6 +1423,8 @@ p {
   font-size: 14px; }
   .price-today_large {
     font-size: 25px; }
+  .price-today_small {
+    font-size: 14px; }
 
 .price-prev {
   font-size: 8.5px;
@@ -1738,6 +1740,8 @@ img {
 
 .price-list {
   margin-bottom: 25px; }
+  .price-list a:hover .price-list__text {
+    color: #3f9ff4; }
   .price-list__text {
     font-size: 12px;
     text-decoration: underline;
@@ -1766,7 +1770,7 @@ img {
   color: #cccccc;
   text-decoration: underline; }
   .grey-link:hover {
-    text-decoration: none; }
+    color: #3f9ff4; }
 
 .small-header {
   font-family: Verdana, sans-serif;
@@ -1776,3 +1780,12 @@ img {
   font-weight: bold;
   padding: 10px 20px;
   margin: 30px 0; }
+
+.small-info {
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 30px;
+  padding: 0 15px; }
+
+.product-line + .product-line {
+  margin-top: 45px; }
